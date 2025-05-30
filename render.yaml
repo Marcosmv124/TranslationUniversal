@@ -1,0 +1,7 @@
+static_site:
+  build_command: npm install && npm run build -- --configuration production
+  publish: dist/bloc-notas-frontend
+  routes:
+    - handle: filesystem
+    - src: /.*
+      dest: /index.html
