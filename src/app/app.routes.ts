@@ -5,5 +5,9 @@ export const routes: Routes = [
   {
     path: '',
     component: TranslatorComponent
+  },
+  {
+    path: '**',  // Ruta comodín para manejar cualquier ruta no definida
+    redirectTo: ''
   }
 ];
